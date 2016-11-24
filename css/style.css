@@ -1,0 +1,228 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+}
+@font-face{
+	font-family:"OpenSans-Bold";
+	src: url('../fonts/open sans/OpenSans-Bold.ttf');
+}
+@font-face{
+	font-family:"OpenSans-SemiBold";
+	src: url('../fonts/open sans/OpenSans-Semibold.ttf');
+}
+@font-face{
+	font-family:"OpenSans-Regular";
+	src: url('../fonts/open sans/OpenSans-Regular.ttf');
+}
+@font-face{
+	font-family:"SourseSansProRegular";
+	src: url('../fonts/sourse sans pro/SourceSansPro-Regular.otf');
+}
+@font-face{
+	font-family:"SourseSansProLight";
+	src: url('../fonts/sourse sans pro/SourceSansPro-Light.otf');
+}
+@font-face{
+	font-family:"SourseSansProBold";
+	src: url('../fonts/sourse sans pro/SourceSansPro-Bold.otf');
+}
+@media (min-width: 0px) and (max-width: 480px) {
+	
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	
+}
+@media (min-width: 768px) and (max-width: 980px) {
+	
+}
+@media (min-width: 981px) and (max-width: 5000px) {
+	
+}
+.wrapper{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.header{
+	background-image: url('../images/bg_header.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.header:after{
+	content: "";
+	display: none;
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -65.0%);
+	bottom: 25px;
+	border-top: 5px solid #727272;
+	background-image: url('../images/bg_uncor.png');
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #f4f5f9;
+}
+.logo{
+	float: left;
+}
+.nav_menu{
+	padding: 30px 0 0 0;
+}
+.navigation_menu{
+	float: right;
+	overflow: hidden;
+	padding-top: 10px;
+}
+.navigation_menu>li{
+	float: left;
+	list-style: none;
+	overflow: hidden;
+	padding: 10px 0;
+	margin: 0 15px;
+}
+.navigation_menu>li:hover{
+	border-bottom: 1px solid #e74c3c;
+	padding-bottom: 9px;
+}
+.navigation_menu>li>a{
+	font: 0.9em OpenSans-Bold;
+	text-transform: uppercase;
+	color: #dbdbdc;
+}
+.navigation_menu>li:hover>a{
+	color: #e74c3c;
+	text-decoration: none;
+	transition: all 1s;
+}
+.slider{
+	padding: 215px 0 250px 0;
+	width: 100%;
+}
+.slide_title{
+	color: #f4f5f9;
+	font: 1.3em SourseSansProRegular;
+}
+.slide>p:nth-child(2){
+	color: #f4f5f9;
+	font: 4em OpenSans-Bold;
+}
+.slide_content{
+	color: #cbc6c0;
+	font: 14px OpenSans-Regular;
+}
+.slide{
+	width: 60% !important;
+}
+.btn-color{
+	background-color:transparent !important;
+	text-transform: uppercase;
+	font: 14px OpenSans-Regular;
+	color: white !important; 
+	margin-right: 20px;
+}
+.btn-color:hover{
+	background-color:#e74c3c !important;
+	border: 1px solid #e74c3c !important;
+	transition: all 1s;
+}
+.romb{
+	border: 1px solid #d2cccc;
+	width: 70px;
+	height: 70px;
+	background-image: url('../images/free support.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.romb:hover{
+	
+}
+.block_hover:hover>.romb{
+	transform: rotate(45deg);
+	left: 37%;
+	border-color: #e74c3c;
+	transition: border-color, transform 1s;	
+	background-image: url('../images/free support left.png');
+}
+.block_hover>p{
+	font: 1.1em OpenSans-SemiBold;
+	color: #6a6a6a;
+	padding: 25px;
+}
+.block_hover:hover>p{
+	color: #e74c3c;
+	transition: all 1s;	
+}
+.block_hover>p:after{
+	content: "-";
+	width: 0px;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+}
+.header_item_text{
+	font: 0.8em SourseSansProLight;
+	color: #999999;
+}
+.padding_row{
+	padding-top: 120px;
+	padding-bottom: 250px;
+}
+.padding_col{
+	padding-bottom: 20px;
+}
+.about_us{
+	background-color: #e3e4e8;
+	padding: 150px 0 145px 0;
+}
+.about_us:after{
+	content: '-';
+	height: 1px;
+	width: 100%;
+	color: #001200;
+	position: relative;
+	top: 40px;
+}
+.about_us__title{
+	padding: 0 0 0 30px;
+	margin: 0;
+	font: 2em SourseSansProBold;
+	border-left: 6px solid #e74c3c;
+	text-transform: uppercase;
+}
+.about_us__text{
+	margin-top: 45px;
+	font: 0.9em SourseSansProRegular;
+	color: #999999;
+}
+.about_us__btn{
+	background-color:#e74c3c !important;
+	text-transform: uppercase;
+	font: 14px OpenSans-Regular;
+	color: white !important; 
+	margin-top: 45px;
+}
+.services{
+	padding: 150px 0 145px 0;
+	background-image: url('../images/bg_services.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.services__slider__title{
+	padding: 0 30px 0 0;
+	margin: 0 0 70px 0;
+	font: 2em SourseSansProBold;
+	border-right: 6px solid #e74c3c;
+	text-transform: uppercase;
+	color: #f4f5f9;
+}
