@@ -4,22 +4,27 @@
 	<meta charset="UTF-8">
 	<title>BINO</title>
 	<meta name="viewport" content="width=devise-width, initial-scale=1.0, maximum-scale=1.0, user-scalale=no">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src='slick/slick.js'></script>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
 	</style>
 </head>
 <body>
-	<div class="header">
+	<div class="header" id="up">
 		<div class="container">
 			<div class="header__top" >
 				<img class="header__top__logo" src="images/logo.png" alt="">
 				<ul class="header__top__nav">
 					  <li><a href="#">home</a></li>
-					  <li><a href="#">about us</a></li>
-					  <li><a href="#">portfolio</a></li>
-					  <li><a href="#">pricing</a></li>
-					  <li><a href="#">team</a></li>
-					  <li><a href="#">blog</a></li>
-					  <li><a href="#">contact</a></li>
+					  <li><a href="#about_us">about us</a></li>
+					  <li><a href="#portfolio">portfolio</a></li>
+					  <li><a href="#price">pricing</a></li>
+					  <li><a href="#team">team</a></li>
+					  <li><a href="#blog">blog</a></li>
+					  <li><a href="#contact">contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -31,13 +36,29 @@
 				<button class="header__slider__item__btn">get started now</button>
 				<button class="header__slider__item__btn">learn more</button>
 			</div>
+			<div class="header__slider__item container">
+				<p class="header__slider__item__title ">Our Clients Are Our First Priority</p>
+				<p >WELCOME TO BINO</p>
+				<p class="header__slider__item__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consequatur et facere vel ex ipsum ducimus, perspiciatis pariatur delectus incidunt dignissimos velit blanditiis ratione dolor porro architecto. Modi optio, vel?</p>
+				<button class="header__slider__item__btn">get started now</button>
+				<button class="header__slider__item__btn">learn more</button>
+			</div>
+			<div class="header__slider__item container">
+				<p class="header__slider__item__title ">Our Clients Are Our First Priority</p>
+				<p >WELCOME TO BINO</p>
+				<p class="header__slider__item__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consequatur et facere vel ex ipsum ducimus, perspiciatis pariatur delectus incidunt dignissimos velit blanditiis ratione dolor porro architecto. Modi optio, vel?</p>
+				<button class="header__slider__item__btn">get started now</button>
+				<button class="header__slider__item__btn">learn more</button>
+			</div>
 		</div>
+		<img src="images/header__down.png" alt="" class="header__down">
 	</div>
 	<div class="who_we">
 		<div class="container">
 				<div class="who_we__block">
 					<div class="who_we__block_hover">
 						<div class="who_we__block__bg">
+
 						</div>
 						<p>SLEEK DESIGN</p>
 					</div>
@@ -70,7 +91,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="about_us">	
+	<div class="about_us" id="about_us">	
 		<div class="container">	
 			<div class="about-us__block">
 				<img src="images/Monitor.png" alt="">	
@@ -89,38 +110,77 @@
 			<div class="services__block__slider">
 				<h3 class="services__slider__title text-right">our services</h3>
 				<div class="services__slider">
-					<div class="services__slider__line">
-						<div class="services__slider__line__img">
-							<img src="images/service__photo.png" alt="">
+					<div class="services__slide">
+						<div class="services__slider__line">
+							<div class="services__slider__line__img">
+								<img src="images/service__photo.png" alt="">
+							</div>
+							<div class="services__slider__line__text">
+								<p class = 'services__slider__line__title'>web design</p>
+								<p class="services__slider__line__article">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+							</div>
 						</div>
-						<div class="services__slider__line__text">
-							<p class = 'services__slider__line__title'>web design</p>
-							<p class="services__slider__line__article">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+						<div class="services__slider__line">
+							<div class="services__slider__line__img">
+								<img src="images/service__photo.png" alt="">
+							</div>
+							<div class="services__slider__line__text">
+								<div class="services__slider__line__title">
+									<p>web design</p>
+								</div>
+								<div class="services__slider__line__article">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+								</div>
+							</div>
+						</div>
+						<div class="services__slider__line">
+							<div class="services__slider__line__img pull-right">
+								<img src="images/service__photo.png" alt="">
+							</div>
+							<div class="services__slider__line__text pull-left">
+								<div class="services__slider__line__title">
+									<p>web design</p>
+								</div>
+								<div class="services__slider__line__article">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="services__slider__line">
-						<div class="services__slider__line__img pull-right">
-							<img src="images/service__photo.png" alt="">
-						</div>
-						<div class="services__slider__line__text pull-left">
-							<div class="services__slider__line__title">
-								<p>web design</p>
+					<div class="services__slide">
+						<div class="services__slider__line">
+							<div class="services__slider__line__img">
+								<img src="images/service__photo.png" alt="">
 							</div>
-							<div class="services__slider__line__article">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+							<div class="services__slider__line__text">
+								<p class = 'services__slider__line__title'>web design</p>
+								<p class="services__slider__line__article">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
 							</div>
 						</div>
-					</div>
-					<div class="services__slider__line">
-						<div class="services__slider__line__img pull-right">
-							<img src="images/service__photo.png" alt="">
-						</div>
-						<div class="services__slider__line__text pull-left">
-							<div class="services__slider__line__title">
-								<p>web design</p>
+						<div class="services__slider__line">
+							<div class="services__slider__line__img pull-right">
+								<img src="images/service__photo.png" alt="">
 							</div>
-							<div class="services__slider__line__article">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+							<div class="services__slider__line__text pull-left">
+								<div class="services__slider__line__title">
+									<p>web design</p>
+								</div>
+								<div class="services__slider__line__article">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+								</div>
+							</div>
+						</div>
+						<div class="services__slider__line">
+							<div class="services__slider__line__img">
+								<img src="images/service__photo.png" alt="">
+							</div>
+							<div class="services__slider__line__text">
+								<div class="services__slider__line__title">
+									<p>web design</p>
+								</div>
+								<div class="services__slider__line__article">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -130,7 +190,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="portfolio">
+	<div class="portfolio" id="portfolio">
 		<div class="all__header">
 			<div class="all__title">
 				<p>resent works</p> 
@@ -163,5 +223,362 @@
 			</div>
 		</div>
 	</div>
+	<div class="caseStudy">
+		<div class="all__header">
+			<div class="all__title">
+				<p>CASE STUDY</p> 
+			</div>
+			<div class="all__content">
+				<p>A brief story about how this process works, keep an eye till the end.</p>
+			</div>
+		</div>
+		<div class="caseStudy__block_bg">
+		</div>
+		<div class="caseStudy__block">
+			<div class="caseStudy__slide">
+				<div class="caseStudy__diamond">
+					<div class="caseStudy__diamond_bg"></div>
+				</div>
+				<div class="caseStudy__block__title">
+					aCCUMULATE CREATIVE IDEAS
+				</div>
+				<div class="caseStudy__block__text">
+					Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let.
+				</div>
+				<button class="caseStudy__block__btn">read more</button>
+			</div>
+			<div class="caseStudy__slide">
+				<div class="caseStudy__diamond">
+					<div class="caseStudy__diamond_bg"></div>
+				</div>
+				<div class="caseStudy__block__title">
+					aCCUMULATE CREATIVE IDEAS
+				</div>
+				<div class="caseStudy__block__text">
+					Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let.
+				</div>
+				<button class="caseStudy__block__btn">read more</button>
+			</div>
+			<div class="caseStudy__slide">
+				<div class="caseStudy__diamond">
+					<div class="caseStudy__diamond_bg"></div>
+				</div>
+				<div class="caseStudy__block__title">
+					aCCUMULATE CREATIVE IDEAS
+				</div>
+				<div class="caseStudy__block__text">
+					Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let.
+				</div>
+				<button class="caseStudy__block__btn">read more</button>
+			</div>
+		</div>
+	</div>
+	<div class="static">
+		<div class="container">
+			<div class="static__row">
+				<div class="static__block">
+					<div class="static__block__bg"></div>
+					<div class="static__count">7093</div>
+					<div class="static__name">Posts Last 24 Hours</div>
+				</div>
+				<div class="static__block">
+					<div class="static__block__bg"></div>
+					<div class="static__count">7093</div>
+					<div class="static__name">Posts Last 24 Hours</div>
+				</div>
+				<div class="static__block">
+					<div class="static__block__bg"></div>
+					<div class="static__count">7093</div>
+					<div class="static__name">Posts Last 24 Hours</div>
+				</div>
+				<div class="static__block">
+					<div class="static__block__bg"></div>
+					<div class="static__count">7093</div>
+					<div class="static__name">Posts Last 24 Hours</div>
+				</div>
+				<div class="static__block">
+					<div class="static__block__bg"></div>
+					<div class="static__count">7093</div>
+					<div class="static__name">Posts Last 24 Hours</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="price" id="price">
+		<div class="container">
+			<div class="all__header">
+				<div class="all__title">
+					<p>OUR PRICING</p> 
+				</div>
+				<div class="all__content">
+					<p>A 30 days free trial for all. A brief story about how this process works, keep an eye till the end.</p>
+				</div>
+			</div>
+			<div class="price__row">
+				<div class="price__block">
+					<div class="price__block_bg1">
+						<div class="price__block_title">
+							starter
+						</div>
+						<div class="price__block_back-bg">
+							<div class="price__block_circle">
+								<p class="price__count">$19</p>
+								<p class="price__name">per month</p>
+							</div>
+						</div>
+						<ul class="price__list">
+							<li>Competition Analysis Methods</li>
+							<li>All Ranked URLs</li>
+							<li>International Support System</li>
+							<li>Social Media Tracking</li>
+						</ul>
+						<button class="price__btn">choose plan</button>
+					</div>
+				</div>
+				<div class="price__block">
+					<div class="price__block_bg2">
+						<div class="price__block_title">
+							premium
+						</div>
+						<div class="price__block_back-bg2">
+							<div class="price__block_circle">
+								<p class="price__count price__count_color">$39</p>
+								<p class="price__name price__count_color">per month</p>
+							</div>
+						</div>
+						<ul class="price__list">
+							<li>Competition Analysis Methods</li>
+							<li>All Ranked URLs</li>
+							<li>International Support System</li>
+							<li>Social Media Tracking</li>
+						</ul>
+						<button class="price__btn price__btn_bg">choose plan</button>
+					</div>
+				</div>
+				<div class="price__block">
+					<div class="price__block_bg1">
+						<div class="price__block_title">
+							business
+						</div>
+						<div class="price__block_back-bg">
+							<div class="price__block_circle">
+								<p class="price__count">$99</p>
+								<p class="price__name">per month</p>
+							</div>
+						</div>
+						<ul class="price__list">
+							<li>Competition Analysis Methods</li>
+							<li>All Ranked URLs</li>
+							<li>International Support System</li>
+							<li>Social Media Tracking</li>
+						</ul>
+						<button class="price__btn">choose plan</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="team" id="team">
+		<div class="container">
+			<div class="all__header">
+				<div class="all__title">
+					<p>OUR TEAM</p> 
+				</div>
+				<div class="all__content">
+					<p>Meet the craziest team. Share your thoughts with them.</p>
+				</div>
+			</div>
+			<div class="team__block team__block_1">
+				<div class="team__block_bg"></div>
+				<div class="team__detail">
+					<p class="team_name">Kazi Erfan</p>
+					<p class="tean_desc">UI/UX Designer</p>
+				</div>	
+			</div>
+			<div class="team__block team__block_2">
+				<div class="team__block_bg"></div>
+				<div class="team__detail">
+					<p class="team_name">Kazi Erfan</p>
+					<p class="tean_desc">UI/UX Designer</p>
+				</div>	
+			</div>
+			<div class="team__block team__block_3">
+				<div class="team__block_bg"></div>
+				<div class="team__detail">
+					<p class="team_name">Kazi Erfan</p>
+					<p class="tean_desc">UI/UX Designer</p>
+				</div>	
+			</div>
+			<div class="team__block team__block_4">
+				<div class="team__block_bg"></div>
+				<div class="team__detail">
+					<p class="team_name">Kazi Erfan</p>
+					<p class="tean_desc">UI/UX Designer</p>
+				</div>	
+			</div>
+			<div class="team__block team__block_5">
+				<div class="team__block_bg"></div>
+				<div class="team__detail">
+					<p class="team_name">Kazi Erfan</p>
+					<p class="tean_desc">UI/UX Designer</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="client">
+		<div class="container">
+			<div class="all__header">
+				<div class="all__title">
+					<p>Great Integrations with Others</p> 
+				</div>
+				<div class="all__content">
+					<p>Suspendisse sed eros mollis, tincidunt felis eget, interdum erat. Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec. </p>
+				</div>
+			</div>
+			<div class="client__content">
+				<div class="client__row">
+					<div class="client__block">
+						<div class="client_bg1"></div>
+					</div>
+					<div class="client__block">
+						<div class="client_bg1"></div>
+					</div>
+					<div class="client__block">
+						<div class="client_bg1"></div>
+					</div>
+					<div class="client__block">
+						<div class="client_bg1"></div>
+					</div>
+					<div class="client__block">
+						<div class="client_bg1"></div>
+					</div>
+				</div>
+				<div class="client__row">
+					<div class="client__block">
+						<div class="client_bg1"></div>
+					</div>
+					<div class="client__block">
+						<div class="client_bg1"></div>
+					</div>
+					<div class="client__block">
+						<div class="client_bg1"></div>
+					</div>
+					<div class="client__block">
+						<div class="client_bg1"></div>
+					</div>
+					<div class="client__block">
+						<div class="client_bg1"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="blog" id="blog">
+		<div class="all__header">
+				<div class="all__title">
+					<p>OUR blog</p> 
+				</div>
+				<div class="all__content">
+					<p>Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.</p>
+				</div>
+		</div>
+		<div class="blog__content">
+			<div class="blog__block">
+				<img src="images/blog_1.png" alt="" class="blog__img">
+				<div class="blog__block_l">
+					<p class="blog__name">art / t-shirt</p>
+					<p class="blog__title">t-shirt design</p>
+					<p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sapiente officia in saepe, dolor, perferendis deleniti labore. Adipisci dolorum facilis cumque iste, magnam veritatis, consequatur quos nostrum, aperiam, repellat perspiciatis!</p>
+					<a href="#" class="blog__link">Read more >></a>
+				</div>
+			</div>
+			<div class="blog__block">
+				<img src="images/blog_2.png" alt="" class="blog__img">
+				<div class="blog__block_l">
+					<p class="blog__name">art / t-shirt</p>
+					<p class="blog__title">t-shirt design</p>
+					<p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sapiente officia in saepe, dolor, perferendis deleniti labore. Adipisci dolorum facilis cumque iste, magnam veritatis, consequatur quos nostrum, aperiam, repellat perspiciatis!</p>
+					<a href="#" class="blog__link">Read more >></a>
+				</div>
+			</div>
+			<div class="blog__block">				
+				<div class="blog__block_r">
+					<p class="blog__name">art / t-shirt</p>
+					<p class="blog__title">t-shirt design</p>
+					<p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sapiente officia in saepe, dolor, perferendis deleniti labore. Adipisci dolorum facilis cumque iste, magnam veritatis, consequatur quos nostrum, aperiam, repellat perspiciatis!</p>
+					<a href="#" class="blog__link">Read more >></a>
+				</div>
+				<img src="images/blog_4.png" alt="" class="blog__img">
+			</div>
+			<div class="blog__block">
+				<div class="blog__block_r">
+					<p class="blog__name">art / t-shirt</p>
+					<p class="blog__title">t-shirt design</p>
+					<p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sapiente officia in saepe, dolor, perferendis deleniti labore. Adipisci dolorum facilis cumque iste, magnam veritatis, consequatur quos nostrum, aperiam, repellat perspiciatis!</p>
+					<a href="#" class="blog__link">Read more >></a>
+				</div>
+				<img src="images/blog_3.png" alt="" class="blog__img">
+			</div>
+		</div>
+	</div>
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="all__header">
+				<div class="all__title">
+					<p>kEEP IN TOUCH</p> 
+				</div>
+				<div class="all__content">
+					<p>Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec. </p>
+				</div>
+			</div>
+			<div class="contact__content">
+				<div class="contact__block">
+					<p class="contact__title">OUR ADDRESS</p>
+					<p class="contact__desc">House #13, Streat road, ydney 2310 Australia</p>
+				</div>
+				<div class="contact__block">
+					<p class="contact__title">call us</p>
+					<p class="contact__desc">+ 880 168 109 1425<br/>+ 0216809142</p>
+				</div>
+				<div class="contact__block">
+					<p class="contact__title">email us</p>
+					<p class="contact__desc">contactus@email.com</p>
+				</div>
+			</div>	
+			<form action="#" class="contact__form">
+				<p><input type="text" class="form__input" placeholder="Name"></p>
+				<p><input type="email" class="form__input" placeholder="Email"></p>
+				<p><input type="text" class="form__input" placeholder="Subject"></p>
+				<p><textarea name="message" id="" cols="30" rows="10" class="form__mess" placeholder="Message"></textarea></p>
+				<button class="price__btn price__btn_bg">Send Message</button>
+			</form>
+		</div>
+	</div>
+	<div class="promo">
+		<div class="all__header">
+				<div class="all__title promo__color">
+					<p>Let's Get Started Now. It's FREE!</p> 
+				</div>
+				<div class="all__content promo__color">
+					<p>30 day free trial. Free plan allows up to 2 projects. Pay if you need more. Cancel anytime. No catches.</p>
+				</div>
+		</div>
+		<button class="price__btn price__btn_bg promo__btn">Start free trial</button>
+		<a href="#up" class="promo__link"><div><p>^</p></div></a>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer__icon">
+				<a href="#" class="footer__icon_bl"><img src="images/facebook.png" alt="facebook"></a>
+				<a href="#" class="footer__icon_bl"><img src="images/twitter.png" alt="facebook"></a>
+				<a href="#" class="footer__icon_bl"><img src="images/rss.png" alt="facebook"></a>
+				<a href="#" class="footer__icon_bl"><img src="images/google plus.png" alt="facebook"></a>
+				<a href="#" class="footer__icon_bl"><img src="images/linked.png" alt="facebook"></a>
+				<a href="#" class="footer__icon_bl"><img src="images/skype.png" alt="facebook"></a>
+				<a href="#" class="footer__icon_bl"><img src="images/vimeo.png" alt="facebook"></a>
+				<a href="#" class="footer__icon_bl"><img src="images/trumb.png" alt="facebook"></a>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
